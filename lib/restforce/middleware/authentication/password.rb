@@ -8,11 +8,7 @@ module Restforce
         client_id: @options[:client_id],
         client_secret: @options[:client_secret],
         username: @options[:username],
-        password: password }
-    end
-
-    def password
-      "#{@options[:password]}#{@options[:security_token]}"
+        password: @options[:password] }
     end
   end
 end
